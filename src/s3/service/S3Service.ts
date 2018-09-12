@@ -1,8 +1,8 @@
 import { S3 } from 'aws-sdk';
 
 export default class S3Uploader {
-  private s3: S3;
-  private awsS3Bucket: string;
+  private readonly s3: S3;
+  private readonly awsS3Bucket: string;
 
   constructor(awsAccessKeyId: string, awsSecretAccessKey: string, awsRegion: string, awsS3Bucket: string) {
     this.awsS3Bucket = awsS3Bucket;

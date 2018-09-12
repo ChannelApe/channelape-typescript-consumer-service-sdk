@@ -19,10 +19,10 @@ enum POLLING_EVENTS {
 }
 
 export default class SqsPollerService {
-  private poller: SqsConsumer;
-  private sqs: AWS.SQS;
-  private logger: Logger;
-  private awsSqsQueueUrl: string;
+  private readonly poller: SqsConsumer;
+  private readonly sqs: AWS.SQS;
+  private readonly logger: Logger;
+  private readonly awsSqsQueueUrl: string;
 
   constructor(options: SqsPollerOptions) {
     this.awsSqsQueueUrl = options.awsSqsQueueUrl;
