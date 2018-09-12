@@ -6,3 +6,4 @@ export { default as SqsPollerOptions } from './sqs/service/model/SqsPollerOption
 export { SqsMessageHandler } from './sqs/service/model/SqsMessageHandler';
 export { default as DecompressionService } from './decompression/service/DecompressionService';
 export { default as S3Service } from './s3/service/S3Service';
+export { default as CsvRecord } from './model/csvRecord';
